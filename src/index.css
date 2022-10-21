@@ -9,3 +9,39 @@
   font-family: marcellus;
   font-size: 62.5%;
  }
+
+ #row1{
+    flex-direction: row ;
+ }
+
+#row2{
+    flex-direction: row-reverse;
+    gap: 5%;
+}
+
+@media (max-width:600px) {
+    #row1{
+        flex-direction: column;
+        gap: 50px;
+     }
+    
+    #row2{
+        flex-direction:column;
+        gap: 50px;
+    }
+    .marginTop{
+        margin-top: 0 !important;
+    }
+}
+
+.swiper-pagination-bullets{
+    bottom: 0px !important;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #545748 !important;
+}
+
+.marginTop{
+    margin-top: 50px;
+}

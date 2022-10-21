@@ -12,7 +12,9 @@ module.exports = {
         'accent':"#de967d"
       }
       , fontSize: {
-        "sm":'15px'
+        "sm": '15px',
+        "base": "18px",
+        "xl": "50px"
       }
 
       , fontFamily: {
