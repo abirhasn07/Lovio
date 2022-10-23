@@ -3,13 +3,12 @@ import React from 'react';
 const PortfolioGallery = ({ item, size }) => {
 	return (
 		<figure
-			className={`flex flex-col w-[95%] justify-center items-center py-4 lg:w-[${size}]`}
+			className={`flex flex-col justify-center items-center py-4 lg:w-[${size}] mx-auto mb-8`}
 		>
 			<img
 				src={item.imgUrl}
 				alt={item.name}
 				loading="lazy"
-				height={'240px'}
 				className="object-cover lg:w-full mx-auto hover:scale-95 duration-300"
 			/>
 			<h4 className="text-[32px] text-secondary">{item.name}</h4>
