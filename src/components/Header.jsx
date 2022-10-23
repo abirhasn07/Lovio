@@ -3,6 +3,7 @@ import logo from '../assets/logo.svg';
 import menu from '../assets/menu.svg';
 import cart from '../assets/cart.svg';
 import close from '../assets/closeMenu.svg';
+import { Link } from 'react-router-dom';
 const Header = () => {
 	const [openMenu, setOpenMenu] = useState(false);
 	return (
@@ -10,15 +11,24 @@ const Header = () => {
 			<div className=" hidden lg:flex w-[90%] mx-auto h-[80px]  justify-center items-center gap-[4rem]">
 				<nav>
 					<ul className="flex justify-center gap-4 items-center">
-						<li className="text-secondary uppercase text-sm tracking-[2px] font-medium cursor-pointer hover:text-accent duration-300">
+						<Link
+							to={'/'}
+							className="text-secondary uppercase text-sm tracking-[2px] font-medium cursor-pointer hover:text-accent duration-300"
+						>
 							Home
-						</li>
-						<li className="text-secondary uppercase text-sm tracking-[2px] font-medium cursor-pointer hover:text-accent duration-300">
+						</Link>
+						<Link
+							to={'/portfolio'}
+							className="text-secondary uppercase text-sm tracking-[2px] font-medium cursor-pointer hover:text-accent duration-300"
+						>
 							Portfolio
-						</li>
-						<li className="text-secondary uppercase text-sm tracking-[2px] font-medium cursor-pointer hover:text-accent duration-300">
+						</Link>
+						<Link
+							to={'/journal'}
+							className="text-secondary uppercase text-sm tracking-[2px] font-medium cursor-pointer hover:text-accent duration-300"
+						>
 							Journal
-						</li>
+						</Link>
 					</ul>
 				</nav>
 				<div className="w-[125px]">

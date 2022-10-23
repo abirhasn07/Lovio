@@ -3,7 +3,7 @@ import { instagramData } from '../data/instagram';
 
 const Instagram = () => {
 	return (
-		<section className="bg-primary">
+		<section className="bg-primary pb-8">
 			<h2 className="text-[42px] text-secondary text-center leading-none font-primary w-[95%] mx-auto mb-4 lg:text-[62px] lg:w-[70%] ">
 				Instagram
 			</h2>
