@@ -14,7 +14,7 @@ const Portfolio = () => {
 		<section className="bg-primary py-4">
 			<div className="w-[90%] mx-auto text-center">
 				<Title titleData={titleData} />
-				<div className="flex flex-col flex-nowrap lg:flex-row gap-4">
+				<div className="flex flex-col flex-nowrap lg:flex-row gap-4 w-[90%] mx-auto">
 					{portfolioData.map((item, index) => {
 						return <PortfolioGallery item={item} key={index} size={'20%'} />;
 					})}

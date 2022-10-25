@@ -2,7 +2,7 @@ import React from 'react';
 import PrimaryButton from './PrimaryButton';
 
 const SingleBlog = ({ item }) => {
-	console.log(item.smallThumb);
+
 	return (
 		<figure className="w-[95%] mx-auto flex justify-between items-center flex-wrap  py-4 lg:py-10 -z-50">
 			<div className="w-[95%] mx-auto lg:w-[45%]">

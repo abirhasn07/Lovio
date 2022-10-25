@@ -45,3 +45,8 @@
 .marginTop{
     margin-top: 50px;
 }
+
+::selection{
+    background-color: #A8DBEA;
+    color: #fff;
+}

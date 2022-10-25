@@ -20,3 +20,20 @@ export const aboutData = [
         , class: "row2"
     },
 ]
+
+
+
+export const aboutPageData = [
+    {
+        imgUrl
+            : "https://ik.imagekit.io/abirhasan/tr:w-400/lovio_img/about_1_BcFXzNdyR.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666601605990"
+    },
+    {
+        imgUrl
+            : "https://ik.imagekit.io/abirhasan/tr:w-400/lovio_img/about_3_dqV9Tf8vu.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666601606968"
+    },
+    {
+        imgUrl
+            : "https://ik.imagekit.io/abirhasan/tr:w-400/lovio_img/about_2_hnbQNc3Tg.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666601605952"
+    }
+]

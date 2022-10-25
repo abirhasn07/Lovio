@@ -9,7 +9,8 @@ module.exports = {
       colors: {
         'primary': "#F6F4EC",
         'secondary': '#545748',
-        'accent':"#de967d"
+        'accent': "#de967d",
+        'selection': "#A8DBEA"
       }
       , fontSize: {
         "sm": '15px',

@@ -1,5 +1,5 @@
 import React from 'react'
-import About from '../components/About';
+import AboutBanner from '../components/AboutBanner';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import HeroBanner from '../components/HeroBanner';
@@ -16,7 +16,8 @@ const Home = () => {
 				<Hero />
 				<HeroBanner />
 				<Service />
-				<About />
+
+				<AboutBanner />
 				<Portfolio />
 				<Testimonial />
 				<Instagram />

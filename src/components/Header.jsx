@@ -29,22 +29,39 @@ const Header = () => {
 						>
 							Journal
 						</Link>
+						<Link
+							to={'/about'}
+							className="text-secondary uppercase text-sm tracking-[2px] font-medium cursor-pointer hover:text-accent duration-300"
+						>
+							About
+						</Link>
 					</ul>
 				</nav>
-				<div className="w-[125px]">
-					<img src={logo} alt="company logo" loading="lazy" width={'125px'} />
+				<div className="w-[125px] cursor-pointer">
+					<Link to="/">
+						<img src={logo} alt="company logo" loading="lazy" width={'125px'} />
+					</Link>
 				</div>
 				<nav>
 					<ul className="flex justify-center gap-4 items-center">
-						<li className="text-secondary uppercase text-sm tracking-[2px] font-medium cursor-pointer hover:text-accent duration-300">
+						<Link
+							to={'/service'}
+							className="text-secondary uppercase text-sm tracking-[2px] font-medium cursor-pointer hover:text-accent duration-300"
+						>
 							Service
-						</li>
-						<li className="text-secondary uppercase text-sm tracking-[2px] font-medium cursor-pointer hover:text-accent duration-300">
+						</Link>
+						<Link
+							to="/shop"
+							className="text-secondary uppercase text-sm tracking-[2px] font-medium cursor-pointer hover:text-accent duration-300"
+						>
 							Shop
-						</li>
-						<li className="text-secondary uppercase text-sm tracking-[2px] font-medium cursor-pointer hover:text-accent duration-300">
+						</Link>
+						<Link
+							to="/contact"
+							className="text-secondary uppercase text-sm tracking-[2px] font-medium cursor-pointer hover:text-accent duration-300"
+						>
 							Contact
-						</li>
+						</Link>
 						<li className="text-secondary uppercase text-sm tracking-[2px] font-medium cursor-pointer hover:text-accent duration-300">
 							Cart
 						</li>
@@ -54,7 +71,7 @@ const Header = () => {
 
 			{/* mobile menu  */}
 
-			<div className="flex justify-around min-h-[60px] items-center relative lg:hidden">
+			<div className="flex justify-around min-h-[60px] items-center relative lg:hidden z-50">
 				<div>
 					<img src={cart} alt="cart-icon" />
 				</div>
@@ -85,27 +102,42 @@ const Header = () => {
 					}
 				>
 					<ul className="text-center">
-						<li className="text-secondary uppercase text-sm tracking-[2px] font-medium cursor-pointer hover:text-accent duration-300 py-2">
+						<Link
+							to="/"
+							className="text-secondary block uppercase text-sm tracking-[2px] font-medium cursor-pointer hover:text-accent duration-300 py-2"
+						>
 							Home
-						</li>
-						<li className="text-secondary uppercase text-sm tracking-[2px] font-medium cursor-pointer hover:text-accent duration-300 py-2">
+						</Link>
+						<Link
+							to="/portfolio"
+							className="text-secondary block uppercase text-sm tracking-[2px] font-medium cursor-pointer hover:text-accent duration-300 py-2"
+						>
 							Portfolio
-						</li>
-						<li className="text-secondary uppercase text-sm tracking-[2px] font-medium cursor-pointer hover:text-accent duration-300 py-2">
+						</Link>
+						<Link
+							to="/journal"
+							className="text-secondary block uppercase text-sm tracking-[2px] font-medium cursor-pointer hover:text-accent duration-300 py-2"
+						>
 							Journal
-						</li>
-						<li className="text-secondary uppercase text-sm tracking-[2px] font-medium cursor-pointer hover:text-accent duration-300 py-2">
+						</Link>
+						<Link
+							to="/service"
+							className="text-secondary block uppercase text-sm tracking-[2px] font-medium cursor-pointer hover:text-accent duration-300 py-2"
+						>
 							Service
-						</li>
-						<li className="text-secondary uppercase text-sm tracking-[2px] font-medium cursor-pointer hover:text-accent duration-300 py-2">
+						</Link>
+						<Link
+							to={'/shop'}
+							className="text-secondary block uppercase text-sm tracking-[2px] font-medium cursor-pointer hover:text-accent duration-300 py-2"
+						>
 							Shop
-						</li>
-						<li className="text-secondary uppercase text-sm tracking-[2px] font-medium cursor-pointer hover:text-accent duration-300 py-2">
+						</Link>
+						<Link
+							to="/contact"
+							className="text-secondary block uppercase text-sm tracking-[2px] font-medium cursor-pointer hover:text-accent duration-300 py-2"
+						>
 							Contact
-						</li>
-						<li className="text-secondary uppercase text-sm tracking-[2px] font-medium cursor-pointer hover:text-accent duration-300 py-2">
-							Cart
-						</li>
+						</Link>
 					</ul>
 				</nav>
 			</div>

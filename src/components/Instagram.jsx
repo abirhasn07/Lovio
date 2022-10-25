@@ -22,5 +22,4 @@ const Instagram = () => {
 		</section>
 	);
 };
-
 export default Instagram;
