@@ -4,8 +4,42 @@ import menu from '../assets/menu.svg';
 import cart from '../assets/cart.svg';
 import close from '../assets/closeMenu.svg';
 import { Link } from 'react-router-dom';
+import Modal from 'react-modal';
+import { formatCurrency } from '../utilities/formatCurrency';
+import ModalContent from './ModalContent';
+
 const Header = () => {
 	const [openMenu, setOpenMenu] = useState(false);
+
+	// MODAL
+	const customStyles = {
+		content: {
+			top: '50%',
+			left: '50%',
+			right: 'auto',
+			bottom: 'auto',
+			marginRight: '-50%',
+			transform: 'translate(-50%, -50%)',
+			width: '70%',
+			height: '70%',
+			zIndex: '99',
+		},
+	};
+	let subtitle;
+	const [modalIsOpen, setIsOpen] = useState(false);
+
+	function openModal() {
+		setIsOpen(true);
+	}
+
+	function afterOpenModal() {
+		// references are now sync'd and can be accessed.
+		// subtitle.style.color = '#f00';
+	}
+
+	function closeModal() {
+		setIsOpen(false);
+	}
 	return (
 		<header className="max-w-[1440px] bg-primary font-secondary">
 			<div className=" hidden lg:flex w-[90%] mx-auto h-[80px]  justify-center items-center gap-[4rem]">
@@ -62,17 +96,45 @@ const Header = () => {
 						>
 							Contact
 						</Link>
-						<li className="text-secondary uppercase text-sm tracking-[2px] font-medium cursor-pointer hover:text-accent duration-300">
-							Cart
+						<li
+							className="text-secondary uppercase text-sm tracking-[2px] font-medium cursor-pointer hover:text-accent duration-300 flex gap-1"
+							onClick={openModal}
+						>
+							Cart <img src={cart} alt="" className="w-[20px] " />
 						</li>
 					</ul>
 				</nav>
 			</div>
+			{/* MODAL  */}
 
+			<div>
+				<Modal
+					isOpen={modalIsOpen}
+					onAfterOpen={afterOpenModal}
+					onRequestClose={closeModal}
+					style={customStyles}
+					contentLabel="Example Modal"
+					ariaHideApp={false}
+				>
+					<div className="flex justify-between px-4  items-center">
+						<h4 className="text-[38px] text-secondary">Your Cart</h4>
+						<div>
+							<img
+								src={close}
+								alt=""
+								className="w-[50px] cursor-pointer"
+								onClick={closeModal}
+							/>
+						</div>
+					</div>
+					<ModalContent />
+				</Modal>
+			</div>
+			{/* MODAL  */}
 			{/* mobile menu  */}
 
 			<div className="flex justify-around min-h-[60px] items-center relative lg:hidden z-50">
-				<div>
+				<div onClick={openModal}>
 					<img src={cart} alt="cart-icon" />
 				</div>
 				<div>

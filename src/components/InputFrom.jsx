@@ -45,7 +45,7 @@ const InputFrom = () => {
 				<input
 					type="submit"
 					value="submit"
-					className=" w-[90%] lg:w-[35%] bg-secondary py-[8px] text-white rounded text-[28px] uppercase cursor-pointer hover:border-[1px] border-secondary hover:bg-transparent hover:text-secondary duration-300"
+					className=" w-[90%] lg:w-[35%] bg-secondary py-[8px] text-white rounded-sm text-[28px] uppercase cursor-pointer hover:border-[1px] border-secondary hover:bg-transparent hover:text-secondary duration-300 mt-12"
 				/>
 			</form>
 		</div>

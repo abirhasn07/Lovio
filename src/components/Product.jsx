@@ -3,7 +3,7 @@ import { formatCurrency } from '../utilities/formatCurrency';
 
 const Product = ({ item }) => {
 	return (
-		<div className="w-[95%] lg:w-[30%] text-center">
+		<div className="w-[95%] lg:w-[30%] text-center md:w-[45%]">
 			<img
 				src={item.img}
 				alt={item.name}
