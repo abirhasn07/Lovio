@@ -25,7 +25,7 @@ const HeroBanner = () => {
 						'https://ik.imagekit.io/abirhasan/lovio_img/hero-img__3__jHq7ebQRy.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1666552196141'
 					}
 					alt="wedding photoshoots"
-					className="-z-10  w-[50%] scale-[.9] -rotate-6 z-0 absolute object-cover left-[5%] bottom-0"
+					className="-z-10  w-[50%] scale-[.9] -rotate-6 absolute object-cover left-[5%] bottom-0"
 					id="img"
 					loading="lazy"
 				/>

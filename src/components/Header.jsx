@@ -5,7 +5,7 @@ import cart from '../assets/cart.svg';
 import close from '../assets/closeMenu.svg';
 import { Link } from 'react-router-dom';
 import Modal from 'react-modal';
-import { formatCurrency } from '../utilities/formatCurrency';
+
 import ModalContent from './ModalContent';
 
 const Header = () => {
