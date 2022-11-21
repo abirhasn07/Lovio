@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import logo from '../assets/logo.svg';
-import menu from '../assets/menu.svg';
+import Modal from 'react-modal';
+import { Link } from 'react-router-dom';
 import cart from '../assets/cart.svg';
 import close from '../assets/closeMenu.svg';
-import { Link } from 'react-router-dom';
-import Modal from 'react-modal';
+import logo from '../assets/logo.svg';
+import menu from '../assets/menu.svg';
 
 import ModalContent from './ModalContent';
 
@@ -41,7 +41,7 @@ const Header = () => {
 		setIsOpen(false);
 	}
 	return (
-		<header className="max-w-[1440px] bg-primary font-secondary">
+		<header className="max-w-[1920px] bg-primary font-secondary">
 			<div className=" hidden lg:flex w-[90%] mx-auto h-[80px]  justify-center items-center gap-[4rem]">
 				<nav>
 					<ul className="flex justify-center gap-4 items-center">
